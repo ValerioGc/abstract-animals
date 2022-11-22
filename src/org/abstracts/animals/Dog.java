@@ -1,8 +1,7 @@
 package org.abstracts.animals;
 
-public class Dog extends Animals {
+public class Dog extends Animals  implements INuotante {
 
-	
 	public Dog(String name, String sound, String food) {
 		super( name,  sound,  food);
 	}
@@ -16,7 +15,7 @@ public class Dog extends Animals {
 	String mangia() {return "cibo cane";}
 	
 	@Override
-	public String toString() {
-		return super.toString();
+	public void nuota() {
+		System.out.println("sto nuotando");
 	}
 }

@@ -1,6 +1,6 @@
 package org.abstracts.animals;
 
-public class Eagle extends Animals {
+public class Eagle extends Animals implements IVolante {
 
 	public Eagle(String name, String sound, String food) {
 		super( name,  sound,  food);
@@ -8,15 +8,14 @@ public class Eagle extends Animals {
 
 	@Override
 	String verso() {
-		return "Verso Canarino ";
+		return "Verso aquila";
 	}
 
 	@Override
-	String mangia() {return "Cibo Canarino";}
+	String mangia() {return "Cibo Aquila";}
 	
 	@Override
-	public String toString() {
-		return super.toString();
+	public void vola() {
+		System.out.println("sto volando");
 	}
-
 }

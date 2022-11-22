@@ -14,14 +14,12 @@ public abstract class Animals {
 		setSleep("Zzz");
 	}
 
-
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	
 	public String getSound() {
 		return sound;
 	}
@@ -29,22 +27,17 @@ public abstract class Animals {
 		this.sound = sound;
 	}
 
-
 	public String getFood() {
 		return food;
 	}
-
 
 	public void setFood(String food) {
 		this.food = food;
 	}
 
-
 	public String getSleep() {
 		return sleep;
 	}
-
-
 	public void setSleep(String sleep) {
 		this.sleep = sleep;
 	}
@@ -58,10 +51,9 @@ public abstract class Animals {
 	
 	@Override
 	public String toString() {
-		return "Nome Animale: " + getName() 
+		return  "\nNome Animale: " + getName() 
 				+ "\nVerso: " + verso() 
 				+ "\n" + "Cibo: " + mangia()
-				+ "\nDormi: " + getSleep()
-				+ "\n----------------------";
+				+ "\nDormi: " + getSleep();
 	}
 }

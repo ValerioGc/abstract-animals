@@ -1,6 +1,6 @@
 package org.abstracts.animals;
 
-public class Dolphin extends Animals {
+public class Dolphin extends Animals implements INuotante {
 
 	public Dolphin(String name, String sound, String food) {
 		super( name,  sound,  food);
@@ -8,14 +8,14 @@ public class Dolphin extends Animals {
 
 	@Override
 	String verso() {
-		return "Verso Canarino ";
+		return "Verso Delfino ";
 	}
 
 	@Override
-	String mangia() {return "Cibo Canarino";}
+	String mangia() {return "Cibo Delfino";}
 	
 	@Override
-	public String toString() {
-		return super.toString();
+	public void nuota() {
+		System.out.println("sto nuotando");
 	}
 }

@@ -1,6 +1,6 @@
 package org.abstracts.animals;
 
-public class Canarin extends Animals {
+public class Canarin extends Animals implements IVolante{
 	
 	public Canarin(String name, String sound, String food) {
 		super( name,  sound,  food);
@@ -15,7 +15,7 @@ public class Canarin extends Animals {
 	String mangia() {return "Cibo Canarino";}
 	
 	@Override
-	public String toString() {
-		return super.toString();
+	public void vola() {
+		System.out.println("sto volando");
 	}
 }
