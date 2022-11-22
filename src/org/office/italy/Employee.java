@@ -12,7 +12,7 @@ public class Employee extends Person {
 
 	@Override
 	public int getYearIncome() {
-		int annualSalary = salary * monthlyCount;		
+		int annualSalary = getSalary() * getMonthlyCount();		
 		return annualSalary;
 	}
 
