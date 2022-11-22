@@ -13,7 +13,7 @@ public class Boss extends Person {
 
 	@Override
 	public int getYearIncome() {
-		int annualSalary = salary * 12 +  bonus;		
+		int annualSalary = (salary * 12) +  bonus;		
 		return annualSalary;
 	}
 	
